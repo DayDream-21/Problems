@@ -11,7 +11,7 @@ public class ClimbingStairs {
     private static final Map<Integer, Integer> map = new HashMap<>();
 
     private static int climbStairs(int n) {
-        
+
         if (n < 0) {
             throw new IllegalArgumentException("n < 0");
         } else if (n == 0 || n == 1 || n == 2) {
