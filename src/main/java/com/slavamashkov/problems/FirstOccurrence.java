@@ -74,6 +74,14 @@ public class FirstOccurrence {
     private static int strStrKPM(String haystack, String needle) {
         int result = -1;
 
+        if (Objects.equals(needle, "")) {
+            return 0;
+        }
+
+        if (needle.length() > haystack.length()) {
+            return -1;
+        }
+
         // piArray initialization
         int i = 1;
         int j = 0;
