@@ -1,5 +1,6 @@
 package com.slavamashkov.problems;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class FirstOccurrence {
@@ -7,8 +8,11 @@ public class FirstOccurrence {
         System.out.println(strStrSlow("abdabc", "bc"));
         System.out.println(strStrSlow("aaab", "ba"));
 
-        System.out.println(strStrSlow("abdabc", "bc"));
-        System.out.println(strStrSlow("aaab", "ba"));
+        System.out.println(strStrFast("abdabc", "bc"));
+        System.out.println(strStrFast("aaab", "ba"));
+
+        System.out.println(strStrKPM("abbaabbab", "bbab"));
+        System.out.println(strStrKPM("abbaab", "ba"));
     }
 
     // Time complexity O(n * m), where
@@ -68,6 +72,51 @@ public class FirstOccurrence {
 
     // Knuth–Morris–Pratt (KMP) Pattern Matching Substring Search
     private static int strStrKPM(String haystack, String needle) {
-        return -1;
+        int result = -1;
+
+        // piArray initialization
+        int i = 1;
+        int j = 0;
+        int[] piArray = new int[needle.length()];
+
+        while (i < needle.length()) {
+            if (needle.charAt(i) == needle.charAt(j)) {
+                piArray[i] = j + 1;
+                i++;
+                j++;
+            } else {
+                if (j == 0) {
+                    piArray[i] = 0;
+                    i++;
+                } else {
+                    j = piArray[j - 1];
+                }
+            }
+        }
+
+        int k = 0;
+        int l = 0;
+
+        while (l < needle.length()) {
+            if (haystack.charAt(k) == needle.charAt(l)) {
+                k++;
+                l++;
+
+                if (l == needle.length()) {
+                    result = k - l;
+                }
+            } else {
+                if (l == 0) {
+                    k++;
+                    if (k == haystack.length() - 1) {
+                        break;
+                    }
+                } else {
+                    l = piArray[l - 1];
+                }
+            }
+        }
+
+        return result;
     }
 }
