@@ -7,15 +7,21 @@ public class LongestCommonPrefix {
     }
 
     public static String longestCommonPrefix(String[] strs) {
-        String prefix = strs[0];
-        StringBuilder sb = new StringBuilder(prefix);
+        // Take first word and create StringBuilder object from it
+        StringBuilder prefix = new StringBuilder(strs[0]);
 
+        // Begin with the second word
         for (int i = 1; i < strs.length; i++) {
-            while (!strs[i].startsWith(sb.toString())) {
-                sb.deleteCharAt(sb.length() - 1);
-                if (sb.isEmpty()) return "";
+            // Check if the selected word starts with a prefix
+            while (!strs[i].startsWith(prefix.toString())) {
+                // If not, then cut off the last letter of this prefix
+                prefix.deleteCharAt(prefix.length() - 1);
+                // If we reached the end
+                if (prefix.isEmpty()) {
+                    return "No common prefix";
+                }
             }
         }
-        return sb.toString();
+        return prefix.toString();
     }
 }
