@@ -10,9 +10,11 @@ public class BinaryTreeDepth {
 
         TreeNode root = new TreeNode(3, node1, node2);
 
-        System.out.println(maxDepth(root));
+        System.out.printf("Max depth: %d%n", maxDepth(root));
+        System.out.printf("Min depth: %d%n", minDepth(root));
     }
 
+    //Time complexity O(n) because we visit each node only once
     private static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
@@ -22,6 +24,21 @@ public class BinaryTreeDepth {
         int right = maxDepth(root.right);
 
         return Math.max(left, right) + 1;
+    }
+
+    private static int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int left = minDepth(root.left);
+        int right = minDepth(root.right);
+
+        if (left == 0 || right == 0) {
+            return Math.max(left, right) + 1;
+        }
+
+        return Math.min(left, right) + 1;
     }
 }
 
