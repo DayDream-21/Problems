@@ -1,4 +1,4 @@
-package com.slavamashkov.problems;
+package com.slavamashkov.problems.leetcode.easy;
 
 import java.util.Arrays;
 

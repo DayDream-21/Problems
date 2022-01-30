@@ -1,4 +1,4 @@
-package com.slavamashkov.problems;
+package com.slavamashkov.problems.leetcode.easy;
 
 public class RemoveElement {
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package com.slavamashkov.problems;
 
+import com.slavamashkov.problems.leetcode.easy.ValidParentheses;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,5 +1,6 @@
 package com.slavamashkov.problems;
 
+import com.slavamashkov.problems.leetcode.easy.RemoveDuplicates;
 import org.junit.Assert;
 import org.junit.Test;
 

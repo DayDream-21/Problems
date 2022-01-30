@@ -1,4 +1,4 @@
-package com.slavamashkov.problems;
+package com.slavamashkov.problems.leetcode.easy;
 
 public class MergeTwoSortedList {
     public static void main(String[] args) {
