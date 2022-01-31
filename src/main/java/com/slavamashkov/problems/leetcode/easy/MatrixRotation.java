@@ -33,8 +33,35 @@ public class MatrixRotation {
                 {0, 0, 0}
         };
 
+        int[][] mat3 = {
+                {1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                {1, 1, 0, 0, 0, 0, 0, 0, 0, 1},
+                {1, 0, 1, 0, 0, 0, 0, 0, 0, 1},
+                {1, 0, 0, 1, 0, 0, 0, 0, 0, 1},
+                {1, 0, 0, 0, 1, 0, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 1, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 1, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+                {1, 0, 0, 0, 0, 0, 0, 0, 1, 1},
+                {1, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+        };
+
+        int[][] tar3 = {
+                {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+                {0, 0, 0, 0, 0, 0, 0, 0, 1, 0},
+                {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
+                {0, 0, 0, 0, 0, 0, 1, 0, 0, 0},
+                {0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+                {0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+                {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
+                {0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+                {1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+        };
+
         System.out.println(findRotation(mat1, tar1));
         System.out.println(findRotation(mat2, tar2));
+        System.out.println(findRotation(mat3, tar3));
     }
 
     private static boolean findRotation(int[][] mat, int[][] target) {
@@ -57,17 +84,29 @@ public class MatrixRotation {
     }
 
     private static void rotate(int[][] mat) {
-        for (int i = 0, j = mat.length - 1; i < j; ++i, --j) {
-            int[] temp = mat[i];
-            mat[i] = mat[j];
-            mat[j] = temp;
-        }
+        int n = mat.length;
 
-        for (int i = 0; i < mat.length; ++i) {
-            for (int j = i + 1; j < mat.length; ++j) {
-                final int temp = mat[i][j];
+        // Step 1 - Transpose Matrix (turn rows to columns)
+        // [[1, 2, 3],    [[1, 4, 7],
+        //  [4, 5, 6], ->  [2, 5, 8],
+        //  [7, 8, 9]]     [3, 6, 9]]
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                int temp = mat[i][j];
                 mat[i][j] = mat[j][i];
                 mat[j][i] = temp;
+            }
+        }
+
+        // Step 2 - Flip Horizontally (moving to center swap pair of columns)
+        // [[1, 4, 7],    [[7, 4, 1],
+        //  [2, 5, 8], ->  [8, 5, 2],
+        //  [3, 6, 9]]     [9, 6, 3]]
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < (n / 2); j++) {
+                int temp = mat[i][j];
+                mat[i][j] = mat[i][n - 1 - j];
+                mat[i][n - 1 - j] = temp;
             }
         }
     }
