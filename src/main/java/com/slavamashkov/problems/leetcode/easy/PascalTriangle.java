@@ -5,13 +5,16 @@ import java.util.List;
 
 public class PascalTriangle {
     public static void main(String[] args) {
-        for (List<Integer> list : generate(10)) {
+        /*for (List<Integer> list : generateNaive(10)) {
+            System.out.println(list);
+        }*/
+
+        for (List<Integer> list : generateSmart(10)) {
             System.out.println(list);
         }
-
     }
 
-    private static List<List<Integer>> generate(int numRows) {
+    private static List<List<Integer>> generateNaive(int numRows) {
         List<List<Integer>> outerList = new ArrayList<>();
         List<Integer> firstRow = new ArrayList<>();
         firstRow.add(1);
@@ -43,4 +46,21 @@ public class PascalTriangle {
 
         return outerList;
     }
+
+    private static List<List<Integer>> generateSmart(int numRows) {
+        List<List<Integer>> outerList = new ArrayList<>();
+        List<Integer> row = new ArrayList<>();
+
+        for (int i = 0; i < numRows; i++) {
+            row.add(0, 1);
+            for (int j = 1; j < row.size() - 1; j++) {
+                row.set(j, row.get(j) + row.get(j + 1));
+            }
+            outerList.add(new ArrayList<>(row));
+        }
+
+        return outerList;
+    }
+
+
 }
