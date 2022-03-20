@@ -1,15 +1,14 @@
 package com.slavamashkov.problems.leetcode.easy;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ContainsDuplicate {
     public static void main(String[] args) {
         int[] arr = {1,1,1,3,3,4,3,2,4,2};
 
         System.out.println(containsDuplicate1(arr));
+        System.out.println(removeDuplicates(Arrays.stream(arr).boxed().collect(Collectors.toList())));
     }
 
 
@@ -47,5 +46,11 @@ public class ContainsDuplicate {
         }
 
         return false;
+    }
+
+    protected static List<Integer> removeDuplicates(List<Integer> input) {
+        Set<Integer> lhs = new LinkedHashSet<>(input);
+
+        return new ArrayList<>(lhs);
     }
 }
