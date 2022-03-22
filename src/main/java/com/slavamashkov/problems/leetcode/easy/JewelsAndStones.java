@@ -19,6 +19,7 @@ public class JewelsAndStones {
         String stones = "aAAbbbb";
 
         System.out.println(findJewels(jewels, stones));
+        System.out.println(oneLineFindJewels(jewels, stones));
     }
 
     protected static int findJewels(String jewels, String stones) {
@@ -36,5 +37,9 @@ public class JewelsAndStones {
         }
 
         return count;
+    }
+
+    protected static int oneLineFindJewels(String jewels, String stones) {
+        return stones.replaceAll("[^" + jewels + "]", "").length();
     }
 }
