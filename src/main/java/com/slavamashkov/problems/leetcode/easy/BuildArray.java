@@ -1,16 +1,19 @@
 package com.slavamashkov.problems.leetcode.easy;
 
-/*
-* Given a zero-based permutation nums (0-indexed),
-* build an array ans of the same length where
-* ans[i] = nums[nums[i]] for each 0 <= i < nums.length
-* and return it.
-*
-* Follow-up: Can you solve it without using an extra space
-* (i.e., O(1) memory)?
-* */
-
 import java.util.Arrays;
+
+/**
+ * <h3>1920. Build Array from Permutation</h3>
+ *
+ * <p>Given a <b>zero-based permutation</b> {@code nums} (<b>0-indexed</b>), build an array {@code ans}
+ * of the <b>same length</b> where {@code ans[i] = nums[nums[i]]} for each {@code 0 <= i < nums.length}
+ * and return it.</p>
+ *
+ * <p>A <b>zero-based permutation</b> {@code nums} is an array of <b>distinct</b> integers from {@code 0}
+ * to {@code nums.length - 1} (<b>inclusive</b>).</p>
+ *
+ * <p><b>Follow-up:</b> Can you solve it without using an extra space (i.e., {@code O(1)} memory)?</p>
+ */
 
 public class BuildArray {
     public static void main(String[] args) {

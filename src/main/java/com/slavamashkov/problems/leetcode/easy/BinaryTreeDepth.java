@@ -14,6 +14,15 @@ public class BinaryTreeDepth {
         System.out.printf("Min depth: %d%n", minDepth(root));
     }
 
+    /**
+     * <h3>104. Maximum Depth of Binary Tree</h3>
+     *
+     * <p>Given the {@code root} of a binary tree, return <i>its maximum depth</i>.</p>
+     *
+     * <p>A binary tree's <b>maximum depth</b> is the number of nodes along the longest path from the root node down
+     * to the farthest leaf node.</p>
+     */
+
     //Time complexity O(n) because we visit each node only once
     private static int maxDepth(TreeNode root) {
         if (root == null) {
@@ -26,6 +35,15 @@ public class BinaryTreeDepth {
         return Math.max(left, right) + 1;
     }
 
+    /**
+     * <h3>111. Minimum Depth of Binary Tree</h3>
+     *
+     * <p>Given a binary tree, find its minimum depth.</p>
+     *
+     * <p>The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.</p>
+     *
+     * <p><b>Note:</b> A leaf is a node with no children.</p>
+     */
     private static int minDepth(TreeNode root) {
         if (root == null) {
             return 0;

@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * <h3>977. Squares of a Sorted Array</h3>
  *
- * Given an integer array {@code nums} sorted in <b>non-decreasing</b> order,
- * return <i>an array of <b>the squares of each number</b> sorted in non-decreasing order.</i>
+ * <p>Given an integer array {@code nums} sorted in <b>non-decreasing</b> order,
+ * return <i>an array of <b>the squares of each number</b> sorted in non-decreasing order.</i></p>
  */
 
 public class SquaresOfASortedArray {

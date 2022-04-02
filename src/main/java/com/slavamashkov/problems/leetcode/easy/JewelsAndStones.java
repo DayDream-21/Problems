@@ -1,16 +1,17 @@
 package com.slavamashkov.problems.leetcode.easy;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 /**
- * You're given strings {@code jewels} representing the types of {@code stones}
+ * <h3>771. Jewels and Stones</h3>
+ *
+ * <p>You're given strings {@code jewels} representing the types of {@code stones}
  * that are jewels, and stones representing the stones you have. Each character
  * in {@code stones} is a type of stone you have. You want to know how many of
- * the stones you have are also jewels.
- * <p>
- * Letters are case-sensitive, so  is considered a different type of stone from {@code "A"}.
+ * the stones you have are also jewels.</p>
+ *
+ * <p> Letters are case-sensitive, so  is considered a different type of stone from {@code "A"}.</p>
  * */
 
 public class JewelsAndStones {

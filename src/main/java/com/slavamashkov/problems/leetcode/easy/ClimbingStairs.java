@@ -3,6 +3,15 @@ package com.slavamashkov.problems.leetcode.easy;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * <h3>70. Climbing Stairs</h3>
+ *
+ * <p>You are climbing a staircase. It takes {@code n} steps to reach the top.</p>
+ *
+ * <p>Each time you can either climb {@code 1} or {@code 2} steps. In how many distinct ways can you climb to
+ * the top?</p>
+ */
+
 public class ClimbingStairs {
     public static void main(String[] args) {
         System.out.println(climbStairs(45));

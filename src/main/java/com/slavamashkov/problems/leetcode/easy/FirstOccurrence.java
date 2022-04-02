@@ -1,7 +1,23 @@
 package com.slavamashkov.problems.leetcode.easy;
 
-import java.util.Arrays;
 import java.util.Objects;
+
+/**
+ * <h3>28. Implement strStr()</h3>
+ *
+ * <p>Implement {@code strStr()}.</p>
+ *
+ * <p>Return the index of the first occurrence of needle in haystack, or {@code -1} if {@code needle} is not part
+ * of {@code haystack}.</p>
+ *
+ * <p><b>Clarification:</b></p>
+ *
+ * <p>What should we return when {@code needle} is an empty string? This is a great question to ask during an
+ * interview.</p>
+ *
+ * <p>For the purpose of this problem, we will return 0 when {@code needle} is an empty string. This is consistent
+ * to C's {@code strstr()} and Java's {@code indexOf()}.</p>
+ */
 
 public class FirstOccurrence {
     public static void main(String[] args) {

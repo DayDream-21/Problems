@@ -13,9 +13,10 @@ public class ContainsDuplicate {
 
 
     /**
-     * Given an integer array nums, return true if any value appears
-     * at least twice in the array, and return false if every element
-     * is distinct.
+     * <h3>217. Contains Duplicate</h3>
+     *
+     * <p>Given an integer array {@code nums}, return {@code true} if any value appears <b>at least twice</b> in the
+     * array, and return {@code false} if every element is distinct.</p>
      * */
     private static boolean containsDuplicate1(int[] nums) {
         Set<Integer> set = new HashSet<>();
@@ -30,8 +31,11 @@ public class ContainsDuplicate {
     }
 
     /**
-     * Given an integer array nums and an integer k, return true if there are two distinct
-     * indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+     * <h3>219. Contains Duplicate II</h3>
+     *
+     * <p>Given an integer array {@code nums} and an integer {@code k}, return {@code true} if there are two
+     * <b>distinct indices</b> {@code i} and {@code j} in the array such that {@code nums[i] == nums[j]} and
+     * {@code abs(i - j) <= k}.</p>
      * */
     private static boolean containsDuplicate2(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();

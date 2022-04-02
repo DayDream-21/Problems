@@ -1,12 +1,14 @@
 package com.slavamashkov.problems.leetcode.medium;
 
 /**
-* You are given two non-empty linked lists representing two non-negative integers.
-* The digits are stored in reverse order, and each of their nodes contains a single
-* digit. Add the two numbers and return the sum as a linked list.
+ * <h3>2. Add Two Numbers</h3>
+ *
+* <p>You are given two <b>non-empty</b> linked lists representing two non-negative integers.
+* The digits are stored in <b>reverse order</b>, and each of their nodes contains a single
+* digit. Add the two numbers and return the sum as a linked list.</p>
 *
-* You may assume the two numbers do not contain any leading zero, except the number
-* 0 itself.
+* <p>You may assume the two numbers do not contain any leading zero, except the number
+* 0 itself.</p>
 * */
 
 public class AddTwoNumbers {

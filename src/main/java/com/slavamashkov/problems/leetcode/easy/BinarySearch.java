@@ -1,6 +1,8 @@
 package com.slavamashkov.problems.leetcode.easy;
 
 /**
+ * <h3>704. Binary Search</h3>
+ *
  * <p>Given an array of integers {@code nums} which is sorted in ascending order,
  * and an integer {@code target}, write a function to search {@code target} in
  * {@code nums}. If {@code target} exists, then return its index. Otherwise, return

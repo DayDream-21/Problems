@@ -1,5 +1,16 @@
 package com.slavamashkov.problems.leetcode.easy;
 
+/**
+ * <h3>21. Merge Two Sorted Lists</h3>
+ *
+ * <p>You are given the heads of two sorted linked lists {@code list1} and {@code list2}.</p>
+ *
+ * <p>Merge the two lists in a one <b>sorted</b> list. The list should be made by splicing together the nodes of the
+ * first two lists.</p>
+ *
+ * <p>Return <i>the head of the merged linked list</i>.</p>
+ */
+
 public class MergeTwoSortedList {
     public static void main(String[] args) {
         ListNode listNode1_3 = new ListNode(4, null);

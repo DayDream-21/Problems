@@ -3,6 +3,22 @@ package com.slavamashkov.problems.leetcode.easy;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <h3>118. Pascal's Triangle</h3>
+ *
+ * <p>Given an integer {@code numRows}, return the first numRows of <b>Pascal's triangle</b>.</p>
+ *
+ * <p>In <b>Pascal's triangle</b>, each number is the sum of the two numbers directly above it as shown:</p>
+ *
+ * <pre>
+ *     1
+ *    1 1
+ *   1 2 1
+ *  1 3 3 1
+ * 1 4 6 4 1
+ * </pre>
+ */
+
 public class PascalTriangle {
     public static void main(String[] args) {
         /*for (List<Integer> list : generateNaive(10)) {
@@ -13,7 +29,7 @@ public class PascalTriangle {
             System.out.println(list);
         }*/
 
-        System.out.println(getRow(0));
+        System.out.println(getRow(4));
     }
 
     private static List<List<Integer>> generateNaive(int numRows) {
@@ -64,6 +80,12 @@ public class PascalTriangle {
         return outerList;
     }
 
+    /**
+     * <h3>119. Pascal's Triangle II</h3>
+     *
+     * Given an integer {@code rowIndex}, return the {@code rowIndexth} (<b>0-indexed</b>) row of the <b>Pascal's
+     * triangle</b>.
+     */
     private static List<Integer> getRow(int rowIndex) {
         List<Integer> row = new ArrayList<>();
 
@@ -72,7 +94,6 @@ public class PascalTriangle {
             for (int j = 1; j < row.size() - 1; j++) {
                 row.set(j, row.get(j) + row.get(j + 1));
             }
-
         }
 
         return row;

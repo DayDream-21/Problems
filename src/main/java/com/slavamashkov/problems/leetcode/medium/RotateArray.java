@@ -3,10 +3,9 @@ package com.slavamashkov.problems.leetcode.medium;
 import java.util.Arrays;
 
 /**
- * <h3></h3>
+ * <h3>189. Rotate Array</h3>
  *
- * Given an array, rotate the array to the right by {@code k} steps,
- * where {@code k} is non-negative.
+ * <p>Given an array, rotate the array to the right by {@code k} steps, where {@code k} is non-negative.</p>
  */
 
 public class RotateArray {

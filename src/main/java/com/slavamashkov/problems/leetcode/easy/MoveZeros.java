@@ -9,7 +9,6 @@ import java.util.Arrays;
  * order of the non-zero elements.</p>
  *
  * <p><b>Note</b> that you must do this in-place without making a copy of the array.</p>
- *
  */
 
 public class MoveZeros {

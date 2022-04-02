@@ -1,4 +1,10 @@
-package com.slavamashkov.problems;
+package com.slavamashkov.problems.leetcode.easy;
+
+/**
+ * <h3>67. Add Binary</h3>
+ *
+ * <p>Given two binary strings {@code a} and {@code b}, return <i>their sum as a binary string</i>.</p>
+ */
 
 public class AddBinary {
     public static void main(String[] args) {

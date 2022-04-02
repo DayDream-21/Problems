@@ -4,8 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Given a string s, find the length of the longest substring without
- * repeating characters.
+ * <h3>3. Longest Substring Without Repeating Characters</h3>
+ *
+ * <p>Given a string {@code s}, find the length of the <b>longest substring</b> without repeating characters.</p>
  * */
 
 public class LongestSubstring {
@@ -14,8 +15,8 @@ public class LongestSubstring {
         System.out.println(lengthOfLongestSubstring("abcabcbb")); // 3
         System.out.println(lengthOfLongestSubstring("pwwkew")); // 3
         System.out.println(lengthOfLongestSubstring("abcd")); // 4
-        System.out.println(lengthOfLongestSubstring("dasqdf")); // 5 !
-        System.out.println(lengthOfLongestSubstring("dvdf")); // 3 !
+        System.out.println(lengthOfLongestSubstring("dasqdf")); // 5
+        System.out.println(lengthOfLongestSubstring("dvdf")); // 3
     }
 
     private static int lengthOfLongestSubstring(String s) {

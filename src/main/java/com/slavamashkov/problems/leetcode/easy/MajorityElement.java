@@ -6,11 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Given an array {@code nums} of size {@code n}, return <i>the majority element</i>.
- * <p>
- * The majority element is the element that appears more than
- * {@code ⌊n / 2⌋} times. You may assume that the majority element always
- * exists in the array.
+ * <h3>169. Majority Element</h3>
+ *
+ * <p>Given an array {@code nums} of size {@code n}, return <i>the majority element</i>.</p>
+ *
+ * <p>The majority element is the element that appears more than {@code ⌊n / 2⌋} times. You may assume that the
+ * majority element always exists in the array.</p>
  * */
 
 public class MajorityElement {
