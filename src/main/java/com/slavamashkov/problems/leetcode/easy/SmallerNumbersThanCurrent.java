@@ -1,11 +1,12 @@
 package com.slavamashkov.problems.leetcode.easy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * <h3>1365. How Many Numbers Are Smaller Than the Current Number</h3>
+ *
  * <p>Given the array {@code nums}, for each {@code nums[i]} find out how many numbers in the
  * array are smaller than it. That is, for each {@code nums[i]} you have to count the number
  * of valid {@code j's} such that {@code j != i} <b>and</b> {@code nums[j] < nums[i]}.</p>

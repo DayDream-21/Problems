@@ -1,10 +1,11 @@
 package com.slavamashkov.problems.leetcode.easy;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 /**
+ * <h3>1603. Design Parking System</h3>
+ *
  * Design a parking system for a parking lot. The parking lot has three kinds of parking spaces:
  * big, medium, and small, with a fixed number of slots for each size.
  * <p>

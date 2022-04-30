@@ -2,10 +2,12 @@ package com.slavamashkov.problems.leetcode.easy;
 
 import java.util.Arrays;
 
-/*
-* Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
+/**
+ * <h3>1470. Shuffle the Array</h3>
+ *
+* <p>Given the array {@code nums} consisting of {@code 2n} elements in the form {@code [x1,x2,...,xn,y1,y2,...,yn]}.</p>
 *
-* Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+* <p><i>Return the array in the form</i> {@code [x1,y1,x2,y2,...,xn,yn]}.</p>
 * */
 
 public class ShuffleTheArray {

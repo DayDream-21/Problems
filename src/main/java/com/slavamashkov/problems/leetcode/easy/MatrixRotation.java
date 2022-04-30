@@ -1,13 +1,14 @@
 package com.slavamashkov.problems.leetcode.easy;
 
-/*
-* Given two n x n binary matrices mat and target,
-* return true if it is possible to make mat equal
-* to target by rotating mat in 90-degree increments,
-* or false otherwise.
-* */
-
 import java.util.Arrays;
+
+/**
+ * <h3>1886. Determine Whether Matrix Can Be Obtained By Rotation</h3>
+ *
+ * <p>Given two {@code n x n} binary matrices {@code mat} and {@code target}, return {@code true} if it is possible
+ * to make {@code mat} equal to {@code target} by <b>rotating</b> mat in <b>90-degree increments</b>, or {@code false}
+ * otherwise.</p>
+ */
 
 public class MatrixRotation {
     public static void main(String[] args) {

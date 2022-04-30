@@ -3,6 +3,8 @@ package com.slavamashkov.problems.leetcode.medium;
 import java.util.*;
 
 /**
+ * <h3>1828. Queries on Number of Points Inside a Circle</h3>
+ *
  * <p>You are given an array {@code points} where {@code points[i] = [xi, yi]} is the coordinates
  * of the {@code ith} point on a 2D plane. Multiple points can have the <b>same</b> coordinates.</p>
  *
@@ -60,11 +62,11 @@ public class PointsInsideCircle {
 
         for (int i = 0; i < queries.length; i++) {
             List<List<Integer>> allRelationalPointsList = new ArrayList<>();
-            for (int j = 0; j < points.length; j++) {
+            for (int[] point : points) {
                 List<Integer> relationalCoordinatesPointsList = new ArrayList<>();
 
-                int relX = points[j][0] - queries[i][0];
-                int relY = points[j][1] - queries[i][1];
+                int relX = point[0] - queries[i][0];
+                int relY = point[1] - queries[i][1];
 
                 relationalCoordinatesPointsList.add(relX);
                 relationalCoordinatesPointsList.add(relY);
