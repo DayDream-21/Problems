@@ -1,5 +1,7 @@
 package com.slavamashkov.problems.leetcode.medium;
 
+import com.slavamashkov.problems.leetcode.ListNode;
+
 /**
  * <h3>2. Add Two Numbers</h3>
  *

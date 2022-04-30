@@ -1,5 +1,7 @@
 package com.slavamashkov.problems.leetcode.medium;
 
+import com.slavamashkov.problems.leetcode.ListNode;
+
 /**
  * <p>You are given the {@code head} of a linked list, which contains
  * a series of <b>integers</b> separated by {@code 0}'s. The <b>beginning</b>

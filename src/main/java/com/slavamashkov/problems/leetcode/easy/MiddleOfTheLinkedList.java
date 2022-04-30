@@ -1,5 +1,7 @@
 package com.slavamashkov.problems.leetcode.easy;
 
+import com.slavamashkov.problems.leetcode.ListNode;
+
 /**
  * <h3>876. Middle of the Linked List</h3>
  *

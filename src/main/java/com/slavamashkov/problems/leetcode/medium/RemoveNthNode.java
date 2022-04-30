@@ -1,5 +1,7 @@
 package com.slavamashkov.problems.leetcode.medium;
 
+import com.slavamashkov.problems.leetcode.ListNode;
+
 /**
  * <h3>19. Remove Nth Node From End of List</h3>
  *
