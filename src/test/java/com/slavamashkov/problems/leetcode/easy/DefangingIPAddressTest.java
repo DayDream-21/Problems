@@ -8,7 +8,7 @@ class DefangingIPAddressTest {
     @Test
     void defangIPaddr_IPAddress_ExpectedEqualsActual() {
         DefangingIPAddress testClass = new DefangingIPAddress();
-
+        
         assertEquals(
                 testClass.defangIPAddress("1.1.1.1"),
                 "1[.]1[.]1[.]1"

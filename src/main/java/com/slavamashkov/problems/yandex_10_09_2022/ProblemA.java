@@ -9,7 +9,7 @@ public class ProblemA {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.nextLine();
         String str2 = sc.nextLine();
-
+        sc.close();
         System.out.println(inspect(str1, str2));
     }
 

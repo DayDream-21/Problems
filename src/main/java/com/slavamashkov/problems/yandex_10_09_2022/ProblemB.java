@@ -4,23 +4,23 @@ import java.util.*;
 
 public class ProblemB {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            int discAmount = scanner.nextInt();
+            String[][] disc = new String[discAmount][2];
+            scanner.nextLine();
+            for (int i = 0; i < discAmount; i++) {
+                disc[i] = scanner.nextLine().split(",");
+            }
 
-        int discAmount = scanner.nextInt();
-        String[][] disc = new String[discAmount][2];
-        scanner.nextLine();
-        for (int i = 0; i < discAmount; i++) {
-            disc[i] = scanner.nextLine().split(",");
+            int pepAmount = scanner.nextInt();
+            String[][] results = new String[pepAmount][4];
+            scanner.nextLine();
+            for (int i = 0; i < pepAmount; i++) {
+                results[i] = scanner.nextLine().split(",");
+            }
+
+            solve(disc, results);
         }
-
-        int pepAmount = scanner.nextInt();
-        String[][] results = new String[pepAmount][4];
-        scanner.nextLine();
-        for (int i = 0; i < pepAmount; i++) {
-            results[i] = scanner.nextLine().split(",");
-        }
-
-        solve(disc, results);
     }
 
     private static void solve(String[][] disc, String[][] results) {
